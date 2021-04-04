@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "bergen-sans";
+  src: url("/font/BergenSans-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Catamaran";
+  src: url("./font/Catamaran-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* header of site */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.social-media {
+  width: 10rem;
+  height: 2rem;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fa-facebook-f {
+  color: #2b5de2;
+  cursor: pointer;
+}
+.fa-twitter {
+  color: #48a1f5;
+  cursor: pointer;
+}
+.fa-instagram {
+  color: #b34e86;
+  cursor: pointer;
+}
+
+.site-logo {
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+.logo-text {
+  font-size: 46px;
+  margin-top: 10px;
+  font-family: "bergen-sans";
+}
+.dat {
+  color: #f2536f;
+}
+.search-container {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+}
+.search {
+  background-color: #eb576d;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  padding: 0 8px 0 8px;
+  font-size: 15px;
+}
+.navbar ul li > a {
+  color: black;
+}
+.navbar ul li > a:focus {
+  color: #eb576d;
+}
+.fa-chevron-down {
+  font-size: 8px;
+}
+/* main */
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main-item {
+  width: 315px;
+  height: 490px;
+  background-color: rgb(255, 255, 255);
+}
+.item {
+  width: 100%;
+  height: calc(100% - 9.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.item::before {
+  content: "";
+  background-image: url("./photos/image1.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.like-comment {
+  width: 6rem;
+  height: 18px;
+  background-color: #6e6ded;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: space-around;
+  font-size: 10px;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 15px;
+  color: white;
+}
+
+.text-in-item {
+  width: 65%;
+  color: #000;
+  z-index: 1;
+  font-size: 22px;
+  margin-bottom: 1.6rem;
+  font-family: "Catamaran";
+}
+mark {
+  background-color: white;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.user-photo {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #48a1f5;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 10px 0 10px;
+}
+.user {
+  font-size: 12px;
+  margin: 2px 20px 0 10px;
+}
+.user-dot {
+  font-size: 22px;
+  padding-bottom: 12px;
+  color: red;
+}
+.about-post {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.about-post-text {
+  text-align: center;
+  padding: 5px;
+  opacity: 0.6;
+}
+.tag {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.fa-tag {
+  transform: rotate(90deg);
+  margin-right: 5px;
+  color: #f2536f;
+}
+/* item 2 */
+.item-2 {
+  width: 100%;
+  height: calc(100% - 9.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.item-2::before {
+  content: "";
+  background-image: url("./photos/image2.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.user-photo-2 {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #ccff3e;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 10px 0 10px;
+}
+/* item 3 */
+.item-3 {
+  width: 100%;
+  height: calc(100% - 9.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.item-3::before {
+  content: "";
+  background-image: url("./photos/image3.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.user-photo-3 {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #8563ff;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 10px 0 10px;
+}
+/* item 4 */
+.item-4 {
+  width: 100%;
+  height: calc(100% - 9.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.item-4::before {
+  content: "";
+  background-image: url("./photos/iamge4.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.user-photo-4 {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #f94dff;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 10px 0 10px;
+}
+/* item 5 */
+.item-5 {
+  width: 100%;
+  height: calc(100% - 9.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.item-5::before {
+  content: "";
+  background-image: url("./photos/image5.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.user-photo-5 {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #81ecff;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 10px 0 10px;
+}

@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./font/Blooming\ Elegant\ Sans\ Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "myFont2";
+  src: url("./font/Blooming\ Elegant\ Sans.otf") format("opentype");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("./font/Roboto-Regular.ttf") format("truetype");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "roboto";
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container::before {
+  content: "";
+  background-image: url("./backgroung.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.15;
+}
+.login-form {
+  position: relative;
+  width: 380px;
+  height: 500px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    #7a78f5,
+    #826cf5,
+    #8c5ef3,
+    #984cef,
+    #a435e9
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-image {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.profile-image {
+  width: 60px;
+  height: 60px;
+}
+.login-text {
+  font-size: 36px;
+  color: #fff;
+  font-family: "myFont";
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  cursor: default;
+}
+.login-username {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.username {
+  width: calc(100% - 6rem);
+  height: 2rem;
+  background-color: transparent;
+  padding-left: 10px;
+  color: #fff;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.username:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.username::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "roboto";
+  font-size: 13px;
+}
+.fa-user {
+  padding: 10px 0 10px 10px;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+/* password */
+
+.login-password {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.password {
+  width: calc(100% - 6rem);
+  height: 2rem;
+  background-color: transparent;
+  padding-left: 10px;
+  color: #fff;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.password:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.password::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "roboto";
+  font-size: 13px;
+}
+.fa-lock {
+  padding: 10px 0 10px 10px;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.remember-me {
+  width: calc(100% - 4.5rem);
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.checkbox-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 3px;
+  padding-top: 4px;
+}
+.login-button {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-size: 12px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.login-help {
+  margin-top: 4rem;
+}
+.login-help > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+}
